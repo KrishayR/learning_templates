@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+  {% block body_block %}
+    <h1>WELCOME TO INDEX</h1>
+    <h2>THIS IS INDEX.HTML PAGE SHOWING!</h2>
+    <h4>{{ text|cut:'world' }}</h4>
+    <h4>{{ number|add:"99" }}</h4>
+    <!-- add is a filter so 100+99 = 199 so it will say 199 -->
+  {% endblock %}
